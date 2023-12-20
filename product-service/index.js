@@ -22,9 +22,9 @@ app.use('/products', productRouter);
 mongoose
   .connect(MONGO_URL, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
   })
-  .then(() => Logging.info('Product-service Connected to MongoDB'))
+  .then(() => Logging.info('Product-service Connected to MongoDB!!'))
   .catch((e) =>
     Logging.error(`Failed Connecting Product-service to MongoDB--> ${e}`)
   );
